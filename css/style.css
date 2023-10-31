@@ -1,0 +1,339 @@
+:root {
+  font-size: 62.5%;
+
+  --base-color: 240;
+  --title-color: hsl(var(--base-color), 0%, 91%);
+  --bg-body: hsl(var(--base-color), 4%, 15%);
+  --switch-bg-url: url(./assets/sun.svg);
+  --bg-main: hsl(var(--base-color), 2%, 45%);
+  --elements-shadow: rgba(0, 0, 0, 0.426);
+  --text-color: hsl(var(--base-color), 0%, 92%);
+  --button-color: hsl(var(--base-color), 25%, 27%);
+  --button-hover: hsl(var(--base-color), 20%, 42%);
+}
+
+.light {
+  --title-color: hsl(var(--base-color), 25%, 27%);
+  --bg-body: hsl(var(--base-color), 0%, 67%);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+  --bg-main: hsl(var(--base-color), 10%, 90%);
+  --text-color: hsl(var(--base-color), 0%, 47%);
+  --button-color: hsl(var(--base-color), 11%, 82%);
+  --button-hover: hsl(var(--base-color), 5%, 75%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  color: var(--title-color);
+  background: var(--bg-body);
+  margin: auto;
+}
+
+/* ---------- BUTTON COLOR THEME & LANGUAGE ---------- */
+#switch, #button {
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0.3rem 0.4rem 0.9rem var(--elements-shadow);
+  cursor: pointer;
+}
+
+#button {
+  font-size: 1.4rem;
+  background: #FFFFFF;
+}
+
+/* ---------- REGRA MOBILE-FIRST ---------- */
+.menu {
+  margin: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2.5rem;
+  background: var(--bg-main);
+  box-shadow: 1rem 1rem 1rem var(--elements-shadow);
+}
+
+#page {
+  width: 31rem;
+  margin: 6rem; 
+}
+
+.hide {
+  display: none;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .4rem;
+}
+
+.title-info,
+.title-info-english {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.hide {
+  display: none;
+}
+
+.title-info h1,
+.title-info-english h1 {
+  font-size: 2rem;
+}
+
+.title-info h2,
+.title-info-english h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.title-info p,
+.title-info-english p {
+  width: auto;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.title-contact p,
+.title-contact-english p {
+  font-size: 1rem;
+  line-height: 1.2rem; /* 140% */
+  color: var(--text-color);
+}
+
+.title-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-links a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  color: var(--text-color);
+}
+
+.skills {
+  margin: 1.4rem 0;
+}
+
+.skills-section,
+.skills-section-english,
+.experience,
+.experience-english,
+.skills-section-education,
+.skills-section-education-english,
+.skills-section-languages,
+.skills-section-languages-english {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
+
+.stacks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: .4rem;
+}
+
+.stacks a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--title-color);
+  font-size: 1rem;
+  border-radius: .4rem;
+  background: var(--button-color);
+  padding: .4rem .8rem;
+}
+
+.jobs {
+  margin: 1rem 0;
+}
+
+.jobs p span {
+  font-size: 1rem;
+}
+
+.jobs p {
+  font-weight: 600;
+  font-size: .8rem;
+  margin-bottom: .45rem;
+}
+
+.jobs p .date,
+.jobs p .umbangu-date,
+.jobs p .umbangu-date-english,
+.jobs p .trashirt-date,
+.jobs p .trashirt-date-english,
+.jobs p .carrefour-date,
+.jobs p .carrefour-date-english {
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.jobs ul li {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.grade .instituition {
+  font-size: 1rem;
+}
+
+.grade .course,
+.grade .education-course-1,
+.grade .education-course-1-english,
+.grade .education-course-2,
+.grade .education-course-2-english,
+.grade .education-course-3,
+.grade .education-course-3-english {
+  font-size: 1.1rem;
+  margin: .2rem 0 .4rem 0;
+  font-weight: 600;
+}
+
+.grade .year {
+  font-size: .8rem;
+  margin-bottom: .45rem;
+}
+
+.grade .year-no-margin {
+  font-size: .8rem;
+  font-weight: 300;
+  margin-bottom: 1.4rem;  
+}
+
+.levels .language-box {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin-bottom: .45rem;
+}
+
+.language-box .language-speak,
+.language-box .language-speak-1,
+.language-box .language-speak-1-english,
+.language-box .language-speak-2,
+.language-box .language-speak-2-english,
+.language-box .language-speak-3,
+.language-box .language-speak-3-english,
+.language-box .language-speak-4,
+.language-box .language-speak-4-english {
+  background: var(--button-color);
+  padding: .4rem .8rem;
+  border-radius: .4rem;
+}
+
+.language-box p {
+  font-size: 1rem;
+}
+
+footer {
+  margin: 3rem auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+/* ---------- TABLET ---------- */
+@media(min-width: 768px) {
+  .menu {
+    width: 53rem;
+    justify-content: flex-end;
+    margin: 5rem auto;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 53rem;
+    height: 75rem;
+  }
+
+  #page {
+    width: 41rem;
+  }
+
+  .title {
+    flex-direction: row;
+    align-items: center;
+    gap: .8rem;
+  }
+
+  .title-info {
+    gap: .8rem;
+  }
+
+  .title-links {
+    width: 16rem;
+  }
+
+  .stacks {
+  grid-template-columns: auto auto auto auto auto;
+  gap: .8rem;
+  }
+
+  .professional-life {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1.4rem;
+  }
+
+  .graduation {
+    flex-direction: column;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+@media(min-width: 1024px) {
+  .grade .year {
+    margin-bottom: 1.6rem;
+  }
+  
+  .levels .language-box {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ---------- PSEUDO-CLASSES ---------- */
+#switch:hover, #button:hover {
+  transform: scale(1.1);
+}
+
+.title-links a:hover {
+  color: var(--title-color);
+}
+
+.stacks a:hover {
+  background: var(--button-hover);
+}
+
+footer a:hover {
+  font-weight: 600;
+}
+/* 311 linhas */
