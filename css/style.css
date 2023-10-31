@@ -41,8 +41,12 @@ body {
   cursor: pointer;
 }
 
+#switch svg {
+  margin: .6rem;
+}
+
 #button {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   background: #FFFFFF;
 }
 

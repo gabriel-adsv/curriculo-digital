@@ -1,11 +1,20 @@
 let page = document.getElementById('page');
 let footer = document.getElementById('footer');
 let button = document.getElementById('button');
+let buttonTheme = document.getElementById('switch');
 
 function toggleMode() {
   let html = document.documentElement
   html.classList.toggle("light");
+
+  let moonStars = buttonTheme.querySelector('.moon-stars')
+  moonStars.classList.toggle('hide');
+
+  let sun = buttonTheme.querySelector('.sun');
+  sun.classList.toggle('hide');
 }
+
+
 
 button.textContent = 'EN';
 
